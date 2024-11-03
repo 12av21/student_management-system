@@ -48,7 +48,7 @@ if (isset($_POST['add_student'])) {
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
 
-            $mail->setFrom('adarshverma7376@gmail.com', 'OTP Service');
+            $mail->setFrom('', 'OTP Service');
             $mail->addAddress($email);  
 
             $mail->isHTML(true); 
