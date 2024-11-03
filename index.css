@@ -1,0 +1,108 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f6f9; /* Light background for a fresh look */
+}
+
+/* Hero Section Styles */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    background: url('frontpage.jpg') no-repeat center center/cover; /* Adjust path to your image */
+    color: #ffffff;
+    text-align: center;
+    padding: 0 20px; /* Responsive padding */
+}
+
+.hero-section h1 {
+    font-size: 3rem; /* Larger font size for the title */
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section p {
+    font-size: 1.5rem; /* Increased paragraph font size */
+    max-width: 700px;
+    margin: 20px 0;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section a {
+    display: inline-block; /* Inline-block for spacing */
+    padding: 15px 30px;
+    margin: 10px; /* Margin between buttons */
+    background-color: #007ACC; /* Bright blue */
+    color: #ffffff;
+    border-radius: 30px;
+    font-size: 1.1rem; /* Consistent button font size */
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-section a:hover {
+    background-color: #005F9E; /* Darker blue on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Features Section Styles */
+.features-section {
+    padding: 60px 20px; /* Responsive padding */
+    text-align: center;
+    background-color: #ffffff; /* White background for features section */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.features-section h2 {
+    font-size: 2rem; /* Larger heading */
+    color: #2A3C50; /* Consistent heading color */
+    margin-bottom: 30px; /* Spacing below heading */
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Increased gap */
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background-color: #f9f9f9; /* Light card background */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* More padding for card content */
+    width: 280px; /* Fixed card width */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem; /* Larger font size for feature titles */
+    margin: 10px 0;
+    color: #2A3C50; /* Consistent title color */
+}
+
+.feature-card p {
+    font-size: 1rem; /* Standard paragraph size */
+    color: #555;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+/* Footer Styles */
+footer {
+    padding: 20px 0;
+    background-color: #2A3C50; /* Consistent footer color */
+    color: #ffffff;
+    font-size: 0.95rem; /* Footer text size */
+    text-align: center;
+}

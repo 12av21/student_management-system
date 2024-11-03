@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #333;
+    background: url('dashbg.webp') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background-color: rgba(44, 62, 80, 0.9);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sidebar h2 {
+    font-size: 20px;
+    color: #ecf0f1;
+    margin-bottom: 20px;
+}
+.sidebar a {
+    color: #ecf0f1;
+    padding: 12px;
+    width: 80%;
+    text-align: center;
+    margin: 8px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #2980b9;
+    transition: background-color 0.3s ease;
+}
+.sidebar a:hover {
+    background-color: #3498db;
+}
+
+/* Content */
+.content {
+    margin-left: 240px;
+    padding: 20px;
+    flex: 1;
+}
+.content h1 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* Cards */
+.card {
+    background-color: rgba(236, 240, 241, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.card h3 {
+    color: #34495e;
+    margin-bottom: 10px;
+}
+.card p {
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+.card a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #2980b9;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.card a:hover {
+    background-color: #3498db;
+}
+
+/* Profile Table */
+.profile-section {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    color: #34495e;
+    margin-bottom: 20px;
+}
+.profile-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+.profile-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.profile-section th, .profile-section td {
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+}
+.profile-section th {
+    background-color: #bdc3c7;
+    color: #34495e;
+    text-align: left;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #2c3e50;
+    color: white;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}

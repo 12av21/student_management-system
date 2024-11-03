@@ -1,0 +1,90 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Modern and clean font */
+    background-image: url('editstudent.jpg'), linear-gradient(to right, #00c6ff, #0072ff); /* Background image with gradient overlay */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* No repeat for the background image */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Darker text color for better readability */
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly more opaque white */
+    border-radius: 12px; /* Softer corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow for better depth */
+}
+
+h1 {
+    color: #0072ff; /* Bright blue for headings */
+    text-align: center;
+    font-size: 2.5em; /* Larger font size for emphasis */
+    margin-bottom: 20px; /* Spacing below heading */
+}
+
+.form-label {
+    color: #555; /* Softer color for labels */
+    font-weight: 600; /* Slightly bolder labels */
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    border-radius: 8px; /* More pronounced rounded corners */
+    border: 1px solid #ccc; /* Light border */
+    padding: 10px; /* Padding inside inputs */
+    width: 100%; /* Full width inputs */
+    box-sizing: border-box; /* Include padding in width */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #0072ff; /* Bright blue border on focus */
+    box-shadow: 0 0 8px rgba(0, 114, 255, 0.5); /* Enhanced focus shadow */
+}
+
+.btn {
+    border-radius: 8px; /* Rounded corners for buttons */
+    padding: 12px 20px; /* Increased padding for larger buttons */
+    font-size: 1em; /* Larger font size */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform for button press effect */
+}
+
+.btn-primary {
+    background-color: #0072ff; /* Primary button color */
+    color: white; /* White text for contrast */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.btn-secondary {
+    background-color: #5a6268; /* Secondary button color */
+    color: white; /* White text for contrast */
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #4e555b; /* Darker shade on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.alert {
+    border-radius: 8px; /* Rounded corners for alerts */
+    padding: 12px;
+    margin-bottom: 20px; /* Space below alert */
+    background-color: #e7f1ff; /* Light blue background for alerts */
+    border: 1px solid #0072ff; /* Border to match primary color */
+    color: #0072ff; /* Text color to match primary color */
+}

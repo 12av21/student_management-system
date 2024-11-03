@@ -1,0 +1,71 @@
+body {
+    background-image: url('../images/background.jpg'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    border-radius: 15px; /* Softer corners */
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 400px; /* Max width for the container */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+h1 {
+    text-align: center;
+    color: #0072ff; /* Bright blue for headings */
+    margin-bottom: 20px;
+}
+
+.chart-container {
+    display: flex;
+    justify-content: center; /* Center the pie chart */
+    margin: 20px 0; /* Space around the chart */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #0072ff; /* Primary color for header */
+    color: white; /* White text for header */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Hover effect for rows */
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #007bff; /* Primary button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.alert {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    margin: 20px 0;
+}

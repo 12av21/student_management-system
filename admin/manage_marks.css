@@ -1,0 +1,102 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('marks.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* White with transparency */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #3498db;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+select, input[type="number"], button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.alert {
+    color: red;
+    margin: 10px 0;
+}
+
+.success {
+    color: green;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e67e22; /* Orange color for visibility */
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+    margin-top: 10px; /* Add space above the button */
+}
+
+.back-button:hover {
+    background-color: #d35400; /* Darker orange on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Stripe effect for rows */
+}
+
+tbody tr:hover {
+    background-color: #e9ecef; /* Highlight effect on hover */
+}

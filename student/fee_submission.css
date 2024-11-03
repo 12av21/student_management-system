@@ -1,0 +1,69 @@
+/* General Container Styling */
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Title Styling */
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    color: #555;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* Button Styling */
+.submit-btn,
+.back-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    background-color: #28a745; /* Green for Submit */
+}
+
+.back-btn {
+    background-color: #6c757d; /* Gray for Back */
+    margin-left: 10px;
+}
+
+/* Success Message Styling */
+.success-message {
+    color: #28a745; /* Green */
+    background-color: #d4edda;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+}

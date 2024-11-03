@@ -1,0 +1,108 @@
+body {
+    background-image: url('viewstudent.jpg'); /* Ensure the image path is correct */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    font-family: 'Arial', sans-serif; /* Font family */
+    color: #fff; /* General text color for better contrast */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for layout */
+}
+
+.wrapper {
+    display: flex; /* Flexbox layout for sidebar and content */
+    width: 100%;
+    min-height: 100vh; /* Full viewport height */
+}
+
+.sidebar {
+    width: 250px; /* Fixed width for sidebar */
+    background-color: rgba(0, 123, 255, 0.9); /* Lively blue background for sidebar */
+    color: white; /* Text color for sidebar */
+    padding: 20px; /* Padding for sidebar */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+.sidebar h2 {
+    text-align: center; /* Center sidebar title */
+    margin-bottom: 20px; /* Margin for title */
+    font-size: 1.8em; /* Font size for title */
+    color: #ffdd57; /* Bright yellow color for the title */
+}
+
+.sidebar nav ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+.sidebar nav ul li {
+    margin: 15px 0; /* Margin between links */
+}
+
+.sidebar nav ul li a {
+    color: white; /* Link color */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Bold link text */
+    padding: 10px; /* Padding for links */
+    display: block; /* Make links block elements */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.sidebar nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Light background on hover */
+}
+
+.content {
+    flex: 1; /* Allow content to take available space */
+    padding: 40px; /* Padding for content */
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for content */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3); /* Shadow effect on right */
+}
+
+h1 {
+    text-align: center; /* Center the header */
+    margin-bottom: 30px; /* Bottom margin */
+    font-size: 2.5em; /* Font size */
+    color: #007bff; /* Header color */
+}
+
+.student-info table {
+    width: 100%; /* Full width for the table */
+    border-collapse: collapse; /* Collapse borders */
+}
+
+.student-info th, .student-info td {
+    padding: 12px; /* Padding for cells */
+    border-bottom: 2px solid #ddd; /* Bottom border for rows */
+    text-align: left; /* Align text to the left */
+    color: #333; /* Text color for cells */
+}
+
+.student-info th {
+    background-color: #007bff; /* Header background color */
+    color: white; /* Header text color */
+    font-weight: bold; /* Bold header text */
+}
+
+.student-info tr:hover {
+    background-color: rgba(0, 123, 255, 0.1); /* Highlight row on hover */
+}
+
+.btn {
+    display: block; /* Display as block */
+    margin: 30px auto; /* Center button */
+    background-color: #28a745; /* Fresh green color for the button */
+    color: white; /* Button text color */
+    text-decoration: none; /* No underline */
+    padding: 14px 30px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text */
+    font-size: 1.2em; /* Slightly larger font size */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+.btn:hover {
+    background-color: #218838; /* Darker green shade on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}

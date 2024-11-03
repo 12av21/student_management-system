@@ -1,0 +1,183 @@
+/* General Styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    font-family: 'Arial', sans-serif; /* Simple font choice for readability */
+    height: 100%;
+    background: url('admindashboard.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Cover entire viewport */
+    color: #34495e; /* Dark color for text */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full height */
+}
+
+/* Navbar Styles */
+nav {
+    background-color: rgba(28, 49, 72, 0.9); /* Semi-transparent primary color */
+    padding: 1rem 2rem; /* Spacing for navbar */
+    width: 100%; /* Full width */
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between logo and links */
+    position: fixed; /* Fixed position at the top */
+    top: 0;
+    z-index: 1000; /* On top of other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+nav h1 {
+    color: #ffffff; /* White text for the title */
+    font-size: 1.8rem; /* Larger font size for visibility */
+    font-weight: bold; /* Bold for emphasis */
+}
+
+nav a {
+    color: #ffffff; /* White color for links */
+    text-decoration: none; /* Remove underline */
+    padding: 0.5rem 1rem; /* Spacing around links */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+    font-weight: bold; /* Make links bold */
+}
+
+nav a:hover {
+    background-color: #154170; /* Darker shade on hover */
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    display: flex; /* Flex container for layout */
+    flex-wrap: wrap; /* Wrap items to the next line */
+    margin-top: 70px; /* Space for fixed navbar */
+    padding: 2rem; /* Padding inside the container */
+    gap: 2rem; /* Gap between items */
+    flex: 1; /* Allow to grow */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for sidebar */
+    padding: 1.5rem; /* Padding for sidebar */
+    border-radius: 8px; /* Rounded corners */
+    min-width: 250px; /* Minimum width for sidebar */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.sidebar h3 {
+    color: #34495e; /* Dark text for sidebar heading */
+    font-size: 1.3rem; /* Slightly larger font for visibility */
+    margin-bottom: 1rem; /* Space below heading */
+    text-transform: uppercase; /* Uppercase for emphasis */
+}
+
+.sidebar a {
+    display: block; /* Block display for full width */
+    color: #34495e; /* Dark color for link text */
+    padding: 0.75rem 1rem; /* Padding for links */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background transition */
+    margin-bottom: 1rem; /* Space between links */
+    background-color: #e9ecef; /* Light background for sidebar links */
+    font-size: 1.1rem; /* Slightly larger font for links */
+}
+
+.sidebar a:hover {
+    background-color: #dee2e6; /* Slightly darker on hover */
+}
+
+/* Profile Section */
+.admin-profile {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background for profile */
+    padding: 2rem; /* Padding for profile section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    display: flex; /* Flex for layout */
+    flex: 1; /* Grow to fill space */
+    align-items: center; /* Center items vertically */
+    max-width: 800px; /* Max width for profile section */
+    flex-direction: column; /* Column layout */
+    text-align: center; /* Center text */
+}
+
+.admin-profile img {
+    border-radius: 50%; /* Circular profile picture */
+    width: 100px; /* Width of the profile picture */
+    height: 100px; /* Height of the profile picture */
+    margin-bottom: 1.5rem; /* Space below image */
+    border: 3px solid #2a4e75; /* Border in primary color */
+}
+
+.admin-profile h1,
+.admin-profile h3 {
+    color: #34495e; /* Dark text for profile names */
+    margin: 0.5rem 0; /* Margin for spacing */
+    font-weight: bold; /* Bold for emphasis */
+}
+
+/* Statistics Section */
+.statistics {
+    display: grid; /* Grid layout for statistics */
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Responsive columns */
+    gap: 2rem; /* Gap between statistics boxes */
+    width: 100%; /* Full width */
+}
+
+.stat-box {
+    background-color: #28a745; /* Bootstrap Success Color */
+    color: white; /* White text */
+    padding: 1.5rem; /* Padding for statistics boxes */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center text */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+    font-weight: bold; /* Bold text for emphasis */
+    box-shadow: 0 2px 10px rgba(40, 167, 69, 0.2); /* Shadow for depth */
+}
+
+.stat-box:hover {
+    background-color: #218838; /* Darker shade on hover */
+}
+
+/* Notices Section */
+.notices-section {
+    display: flex; /* Flex layout for notices */
+    flex-wrap: wrap; /* Wrap notices to next line */
+    gap: 1rem; /* Space between notices */
+    width: 100%; /* Full width */
+    margin-top: 1.5rem; /* Space above notices */
+}
+
+.notice-item {
+    background-color: #ffc107; /* Bootstrap Warning Color */
+    padding: 1rem; /* Padding for notice items */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+    font-weight: bold; /* Bold text for emphasis */
+    color: #ffffff; /* White text */
+    box-shadow: 0 2px 10px rgba(255, 193, 7, 0.2); /* Shadow for depth */
+    flex: 1 1 calc(30% - 10px); /* Responsive flex item */
+}
+
+.notice-item:hover {
+    background-color: #e0a800; /* Darker shade on hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center; /* Center footer text */
+    padding: 1rem; /* Padding for footer */
+    background-color: #34495e; /* Dark background for footer */
+    color: #ecf0f1; /* Light text for footer */
+    position: fixed; /* Fixed position at the bottom */
+    width: 100%; /* Full width */
+    bottom: 0; /* Bottom of the page */
+    font-weight: bold; /* Bold for emphasis */
+}

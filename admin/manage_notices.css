@@ -1,0 +1,126 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background: #35424a;
+    color: #ffffff;
+    padding: 15px 20px;
+}
+
+nav h1 {
+    margin: 0;
+    display: inline;
+}
+
+nav div {
+    float: right;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    display: flex;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 20%;
+    background: #eaeaea;
+    padding: 15px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.admin-profile {
+    flex-grow: 1;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #35424a;
+    color: #ffffff;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #45a049;
+}
+
+/* Footer styles */
+footer {
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* Existing styles... */
+
+/* Alert styles */
+.alert {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.alert.success {
+    background-color: #4CAF50; /* Green */
+}
+
+.alert.notice {
+    background-color: #2196F3; /* Blue */
+}
+
+.alert.error {
+    background-color: #f44336; /* Red */
+}
