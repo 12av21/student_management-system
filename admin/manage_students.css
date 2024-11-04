@@ -8,143 +8,162 @@
 }
 
 body, html {
-    font-family: 'Comic Sans MS', 'Arial', sans-serif; /* Friendly font */
-    background-image: url('managestudent.jpg'); /* Correct path to your background image */
-    background-size: cover; /* Cover the entire viewport */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Prevent the background image from tiling */
-    background-color: #e6f7ff; /* Light blue background as a fallback */
+    font-family: 'Arial', sans-serif;
+    background-image: url('managestudent.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #e6f7ff;
     margin: 0;
     padding: 0;
 }
 
 /* Container Styling */
 .container {
-    max-width: 1000px;
+    max-width: 800px;
     margin: 50px auto;
-    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for better visibility over background */
-    padding: 20px;
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Heading Styling */
+/* Heading */
 h1 {
     text-align: center;
-    color: #1a8cff;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 15px;
-    text-shadow: 1px 1px 2px rgba(26, 140, 255, 0.3);
+    color: #0056b3; 
+    font-size: 2.8rem;
+    font-weight: 800; 
+    margin-bottom: 25px; 
 }
 
-/* Table Styling */
+/* Filter Form */
+.filter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    margin-bottom: 25px; 
+}
+
+.filter-form label {
+    font-weight: bold;
+    color: #222; 
+    font-size: 1.2rem; 
+}
+
+.filter-form select {
+    padding: 12px;
+    border-radius: 10px; 
+    border: 2px solid #0056b3; 
+    background-color: #e0f7fa; 
+    color: #333;
+}
+
+.filter-form button {
+    padding: 15px;
+    background-color: #28a745; 
+    color: white;
+    font-weight: bold;
+    border-radius: 10px; 
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(40, 167, 69, 0.3); 
+    transition: background-color 0.3s, transform 0.2s; 
+}
+.filter-form button:hover {
+    background-color: #218838; 
+    transform: scale(1.03); 
+}
+
+/* Table */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 15px;
-    font-size: 1.1rem;
+    margin-top: 20px;
 }
-
 table th,
 table td {
-    padding: 14px;
+    padding: 16px;
     text-align: left;
-    border-bottom: 2px solid #b3e0ff; /* Light blue borders */
-    border-radius: 8px;
+    border-bottom: 2px solid #b3e0ff;
 }
 
 table th {
-    background-color: #1a8cff;
+    background-color: #0056b3; 
     color: white;
-    font-weight: bold;
 }
 
 table tr:nth-child(even) {
-    background-color: #f2faff;
+    background-color: #f0f8ff; 
 }
 
-table tr:hover {
-    background-color: #d9f2ff;
-}
-
-/* Action Buttons Styling */
-.actions {
-    text-align: center;
-}
-
+/* Action Buttons */
 .actions a {
-    padding: 10px 16px;
-    background-color: #ff8533;
-    color: white;
-    text-decoration: none;
-    border-radius: 20px; /* Rounded buttons */
-    font-weight: 600;
-    font-size: 0.9rem;
+    display: inline-block; 
+    padding: 12px 18px; 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 8px; 
+    font-weight: bold; 
     transition: background-color 0.3s, transform 0.2s;
-    display: inline-block;
-    box-shadow: 0 3px 6px rgba(255, 133, 51, 0.3);
+    margin-right: 10px; 
 }
 
-.actions a:hover {
-    background-color: #e67300;
+/* View Button Style */
+.actions a.view-btn {
+    background-color: #007bff; 
+}
+
+.actions a.view-btn:hover {
+    background-color: #0056b3; 
     transform: scale(1.05);
 }
 
-/* Delete Button Styling */
-.delete-btn {
-    background-color: #ff4d4d;
-    transition: background-color 0.3s, transform 0.2s;
+/* Edit Button Style */
+.actions a.edit-btn {
+    background-color: #ffc107; 
 }
 
-.delete-btn:hover {
-    background-color: #e60000;
-    transform: scale(1.05);
+.actions a.edit-btn:hover {
+    background-color: #e0a800; 
+    transform: scale(1.05); 
 }
 
-/* Add Student Button Styling */
-.add-student-btn {
-    display: block;
-    width: 180px;
-    padding: 12px;
-    margin: 20px auto;
-    background-color: #33cc33;
+.actions a.delete-btn {
+    background-color: #dc3545;
+}
+
+.actions a.delete-btn:hover {
+    background-color: #c82333; 
+    transform: scale(1.05); 
+}
+
+.back-button,
+.add-student-button {
+    padding: 12px 20px; 
     color: white;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 25px; /* Rounded corners */
     font-weight: bold;
-    font-size: 1rem;
-    transition: background-color 0.3s, transform 0.2s;
-    box-shadow: 0 4px 10px rgba(51, 204, 51, 0.3);
+    border-radius: 8px; 
+    border: none;
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.2s; 
+    margin: 10px 0;
+    display: inline-block; 
+
+}
+.back-button {
+    background-color: #007bff;
 }
 
-.add-student-btn:hover {
-    background-color: #29a329;
-    transform: scale(1.05);
+.back-button:hover {
+    background-color: #0056b3; 
+    transform: scale(1.03); 
 }
 
-/* Success and Error Message Styling */
-.message {
-    text-align: center;
-    color: #33cc33;
-    font-size: 1.1rem;
-    margin-bottom: 15px;
-    font-weight: 600;
-    background-color: #e6ffe6;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #b3ffb3;
+.add-student-button {
+    background-color: #28a745; 
 }
 
-.error {
-    text-align: center;
-    color: #e60000;
-    font-size: 1.1rem;
-    margin-bottom: 15px;
-    font-weight: 600;
-    background-color: #ffe6e6;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #ffb3b3;
+.add-student-button:hover {
+    background-color: #218838; 
+    transform: scale(1.03); 
 }

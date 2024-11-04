@@ -43,8 +43,8 @@ if (isset($_POST['add_student'])) {
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'adarshverma7376@gmail.com'; // Change to your email
-            $mail->Password = 'jmuecalvtlmwnkpb'; // Change to your email password
+            $mail->Username = '@gmail.com'; // Change to your email
+            $mail->Password = ''; // Change to your email password
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
 
