@@ -48,9 +48,9 @@ if (isset($_POST['add_student'])) {
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
 
-            $mail->setFrom('adarshverma7376@gmail.com', 'OTP Service');
+            $mail->setFrom('', 'OTP Service');
             $mail->addAddress($email);  
-
+        
             $mail->isHTML(true); 
             $mail->Subject = 'Student Login Credentials';
             $mail->Body = "Dear $name,<br><br>Your account has been created. Here are your login details:<br><br>Username: $email<br>Password: $password<br><br>Please log in and change your password.";

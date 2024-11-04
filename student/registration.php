@@ -55,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $mail->Port       = 587;
 
                 // Recipients
-                $mail->setFrom('adarshverma7376@gmail.com', 'OTP Service');
+                $mail->setFrom('', 'OTP Service');
                 $mail->addAddress($email);  // User email
 
                 // Content
